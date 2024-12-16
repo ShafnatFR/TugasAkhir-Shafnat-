@@ -1,0 +1,10 @@
+a {
+    text-decoration: none; /* Menghilangkan underline */
+    color: inherit; /* Mengambil warna teks dari elemen induknya */
+}
+
+a:hover {
+    text-decoration: none; /* Mencegah underline saat hover */
+    color: inherit; /* Mencegah perubahan warna saat hover */
+    cursor: default; /* Mengubah kursor menjadi default saat hover (opsional) */
+}

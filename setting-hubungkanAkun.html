@@ -9,6 +9,8 @@
     </head>
     <body class="d-flex flex-column min-vh-100">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+        <!-- Header -->
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
@@ -79,31 +81,49 @@
                             <a href="setting-profil.html" class="btn btn-outline-danger">Profil</a>
                             <a href="setting-preferensi.html" class="btn btn-outline-danger">Preferensi</a>
                             <a href="setting-notifikasi.html" class="btn btn-outline-danger">Notifikasi</a>
-                            <a href="setting-hubungkanAkun.html" class="btn btn-outline-danger">Hubungkan Akun</a>
-                            <a href="setting-keluar.html" class="btn btn-danger active">Keluar</a>
+                            <a href="setting-hubungkanAkun.html" class="btn btn-danger active">Hubungkan Akun</a>
+                            <a href="setting-keluar.html" class="btn btn-outline-danger">Keluar</a>
                             <a href="setting-tutupAkun.html" class="btn btn-outline-danger">Tutup Akun</a>
                         </div>
                     </div>
                     <!-- Bagian Informasi Profil -->
                     <div class="col-12 col-md-9 p-3">
                         <div class="card-body">
-                            <div class="text-center">
-                                <h3 class="mb-4"><strong>Keluar</strong></h3>
+                            <div class="card-title text-center">
+                                <h4 class="mb-4"><strong>Profil Siswa</strong></h4>
                             </div>
-                                <p><b>Peringatan! Keluar</b> berarti anda akan <b>keluar atau logout</b> dari 
-                                    website ini, anda akan diminta untuk <b>login</b> kembali jika anda memasuki 
-                                    website ini lagi. Apa anda ingin keluar?
-                                <div class="text-center">
-                                    <a type="submit" class="btn btn-outline-danger" href="HalamanSignIn.html" >Ya</a>
+                            <form>
+                                <div class="mb-0">
+                                    <label for="namaDepan" class="form-label">Email</label>
+                                    <input type="text" class="form-control" id="namaDepan" placeholder="">
                                 </div>
-                            </div>
+                                <div class="mb-0">
+                                    <label for="namaDepan" class="form-label">Instagram</label>
+                                    <input type="text" class="form-control" id="namaDepan" placeholder="">
+                                </div>
+                                <div class="mb-0">
+                                    <label for="namaDepan" class="form-label">Twitter</label>
+                                    <input type="text" class="form-control" id="namaDepan" placeholder="">
+                                </div>
+                                <div class="mb-0">
+                                    <label for="namaDepan" class="form-label">Linkedln</label>
+                                    <input type="text" class="form-control" id="namaDepan" placeholder="">
+                                </div>
+                                <div class="mb-0">
+                                    <label for="namaDepan" class="form-label">Github</label>
+                                    <input type="text" class="form-control" id="namaDepan" placeholder="">
+                                </div>
+                                <div class="text-end mt-2">
+                                    <button type="submit" class="btn btn-outline-danger">Ubah</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </main>
-
+    </main>
+        
         <!-- Footer -->
         <footer class="bg-dark text-light mt-5">
             <div class="container">
@@ -139,6 +159,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Copyright -->
                 <div class="row py-4">
                     <div class="col-12 text-center">
@@ -147,6 +168,5 @@
                 </div>
             </div>
         </footer>
-
     </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Reset Your Password</h2>
+        <form id="resetForm">
+            <p>No worries, enter your email below and we will <br> send you a reset code.</p>
+            <div class="form-group">
+                <input type="email" id="email" required placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn">Send Reset Code</button>
+        </form>
+        <a href="HalamanSignIn.html" id="backToLogin">Back to Sign in</a>
+    </div>
+
+    <script>
+        document.getElementById('resetForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            if (email) {
+                alert('A reset code has been sent to your email: ' + email);
+                window.location.href = 'Verification.html';
+            } else {
+                alert('Please enter your email.');
+            }
+        });
+    </script>
+</body>
+</html>

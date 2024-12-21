@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>  
+    <div class="container-fluid vh-100">
+        <div class="row h-100">
+            <div class="col-md-7 d-flex flex-column justify-content-center align-items-center left-section1">
+                <h2 class="font-weight-bold text-danger">Sign In</h2>
+                <img src="Google1.png" alt="Google1" width="50" class="my-3">
+                <form class="w-75 mt-3">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    </div>
+                    <div class="text-right">
+                        <a href="ForgetPass.html" id="forgot-password" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-block rounded-pill mt-3"><a href="mainlogin.html">Sign In</a></button>
+                </form>
+            </div>        
+        
+            
+            <div class="col-md-5 d-flex flex-column justify-content-center align-items-center right-section1">
+                <h1 class="display-4 font-weight-bold text-center">Hello Friend</h1>
+                <p class="text-center">We’re excited to have you onboard.<br>Let’s start learning together!</p>
+                <a href="HalamanSignUp.html" class="btn btn-outline-light rounded-pill px-4 mt-3">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Ambil elemen form
+        document.querySelector('form').addEventListener('submit', function(event) {
+            // Ambil nilai input dari field
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+    
+            // Validasi untuk memastikan semua field terisi
+            if (name === '' || email === '' || password === '') {
+                alert('Semua field harus diisi!');
+                event.preventDefault(); // Mencegah form terkirim jika validasi gagal
+                return;
+            }
+    
+            // Validasi email harus mengandung karakter '@'
+            if (!email.includes('@')) {
+                alert('Email harus mengandung karakter "@"!');
+                event.preventDefault(); // Mencegah form terkirim jika validasi gagal
+                return;
+            }
+    
+
+    
+            // Jika semua validasi berhasil
+            alert('Sign In berhasil!');
+        });
+    </script>
+    
+</body>
+</html>

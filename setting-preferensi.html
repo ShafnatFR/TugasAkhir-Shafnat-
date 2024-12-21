@@ -77,10 +77,10 @@
                         <!-- Tombol Rata Kanan Kiri -->
                         <div class="d-grid gap-2 w-75 mb-4">
                             <a href="setting-profil.html" class="btn btn-outline-danger">Profil</a>
-                            <a href="setting-preferensi.html" class="btn btn-outline-danger">Preferensi</a>
+                            <a href="setting-preferensi.html" class="btn btn-danger active">Preferensi</a>
                             <a href="setting-notifikasi.html" class="btn btn-outline-danger">Notifikasi</a>
                             <a href="setting-hubungkanAkun.html" class="btn btn-outline-danger">Hubungkan Akun</a>
-                            <a href="setting-keluar.html" class="btn btn-danger active">Keluar</a>
+                            <a href="setting-keluar.html" class="btn btn-outline-danger">Keluar</a>
                             <a href="setting-tutupAkun.html" class="btn btn-outline-danger">Tutup Akun</a>
                         </div>
                     </div>
@@ -88,15 +88,130 @@
                     <div class="col-12 col-md-9 p-3">
                         <div class="card-body">
                             <div class="text-center">
-                                <h3 class="mb-4"><strong>Keluar</strong></h3>
+                                <h3 class="mb-4"><strong>Preferensi Akun</strong></h3>
                             </div>
-                                <p><b>Peringatan! Keluar</b> berarti anda akan <b>keluar atau logout</b> dari 
-                                    website ini, anda akan diminta untuk <b>login</b> kembali jika anda memasuki 
-                                    website ini lagi. Apa anda ingin keluar?
-                                <div class="text-center">
-                                    <a type="submit" class="btn btn-outline-danger" href="HalamanSignIn.html" >Ya</a>
+                            <div class="mb-3">
+                                <label for="languageSelect" class="form-label">Bahasa</label>
+                                <select id="languageSelect" class="form-select">
+                                    <option value="id">Bahasa Indonesia</option>
+                                    <option value="en">English</option>
+                                    <option value="jp">日本語 (Japanese)</option>
+                                    <option value="zh">中文 (Mandarin)</option>
+                                    <option value="es">Español (Spanish)</option>
+                                    <option value="fr">Français (French)</option>
+                                    <option value="de">Deutsch (German)</option>
+                                    <option value="ar">العربية (Arabic)</option>
+                                    <option value="ru">Русский (Russian)</option>
+                                    <option value="hi">हिंदी (Hindi)</option>
+                                    <option value="ko">한국어 (Korean)</option>
+                                    <option value="pt">Português (Portuguese)</option>
+                                    <option value="it">Italiano (Italian)</option>
+                                    <option value="th">ไทย (Thai)</option>
+                                    <option value="vi">Tiếng Việt (Vietnamese)</option>
+                                    <option value="ms">Bahasa Melayu (Malay)</option>
+                                    <option value="ta">தமிழ் (Tamil)</option>
+                                    <option value="bn">বাংলা (Bengali)</option>
+                                    <option value="nl">Nederlands (Dutch)</option>
+                                    <option value="tr">Türkçe (Turkish)</option>
+                                    <option value="pl">Polski (Polish)</option>
+                                    <option value="sv">Svenska (Swedish)</option>
+                                    <option value="no">Norsk (Norwegian)</option>
+                                    <option value="fi">Suomi (Finnish)</option>
+                                    <option value="da">Dansk (Danish)</option>
+                                    <option value="el">Ελληνικά (Greek)</option>
+                                    <option value="he">עברית (Hebrew)</option>
+                                    <option value="uk">Українська (Ukrainian)</option>
+                                    <option value="cs">Čeština (Czech)</option>
+                                    <option value="ro">Română (Romanian)</option>
+                                    <option value="hu">Magyar (Hungarian)</option>
+                                    <option value="sk">Slovenčina (Slovak)</option>
+                                    <option value="bg">Български (Bulgarian)</option>
+                                    <option value="sr">Српски (Serbian)</option>
+                                    <option value="hr">Hrvatski (Croatian)</option>
+                                    <option value="sl">Slovenščina (Slovenian)</option>
+                                    <option value="af">Afrikaans (Afrikaans)</option>
+                                    <option value="sw">Kiswahili (Swahili)</option>
+                                    <option value="ur">اردو (Urdu)</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="timezoneSelect" class="form-label">Zona Waktu</label>
+                                <select id="timezoneSelect" class="form-select">
+                                    <!-- Asia -->
+                                    <optgroup label="Asia">
+                                        <option value="Asia/Jakarta">(GMT+07:00) Jakarta</option>
+                                        <option value="Asia/Singapore">(GMT+08:00) Singapore</option>
+                                        <option value="Asia/Tokyo">(GMT+09:00) Tokyo</option>
+                                        <option value="Asia/Seoul">(GMT+09:00) Seoul</option>
+                                        <option value="Asia/Shanghai">(GMT+08:00) Shanghai</option>
+                                        <option value="Asia/Kolkata">(GMT+05:30) Kolkata</option>
+                                        <option value="Asia/Dubai">(GMT+04:00) Dubai</option>
+                                        <option value="Asia/Bangkok">(GMT+07:00) Bangkok</option>
+                                        <option value="Asia/Kuala_Lumpur">(GMT+08:00) Kuala Lumpur</option>
+                                        <option value="Asia/Manila">(GMT+08:00) Manila</option>
+                                    </optgroup>
+                              
+                                    <!-- Europe -->
+                                    <optgroup label="Europe">
+                                        <option value="Europe/London">(GMT+00:00) London</option>
+                                        <option value="Europe/Paris">(GMT+01:00) Paris</option>
+                                        <option value="Europe/Berlin">(GMT+01:00) Berlin</option>
+                                        <option value="Europe/Moscow">(GMT+03:00) Moscow</option>
+                                        <option value="Europe/Rome">(GMT+01:00) Rome</option>
+                                        <option value="Europe/Madrid">(GMT+01:00) Madrid</option>
+                                        <option value="Europe/Athens">(GMT+02:00) Athens</option>
+                                        <option value="Europe/Warsaw">(GMT+01:00) Warsaw</option>
+                                    </optgroup>
+                              
+                                  <!-- America -->
+                                  <optgroup label="America">
+                                      <option value="America/New_York">(GMT-05:00) New York</option>
+                                      <option value="America/Chicago">(GMT-06:00) Chicago</option>
+                                      <option value="America/Denver">(GMT-07:00) Denver</option>
+                                      <option value="America/Los_Angeles">(GMT-08:00) Los Angeles</option>
+                                      <option value="America/Sao_Paulo">(GMT-03:00) São Paulo</option>
+                                      <option value="America/Mexico_City">(GMT-06:00) Mexico City</option>
+                                      <option value="America/Toronto">(GMT-05:00) Toronto</option>
+                                      <option value="America/Lima">(GMT-05:00) Lima</option>
+                                  </optgroup>
+                              
+                                  <!-- Africa -->
+                                  <optgroup label="Africa">
+                                      <option value="Africa/Lagos">(GMT+01:00) Lagos</option>
+                                      <option value="Africa/Cairo">(GMT+02:00) Cairo</option>
+                                      <option value="Africa/Johannesburg">(GMT+02:00) Johannesburg</option>
+                                      <option value="Africa/Nairobi">(GMT+03:00) Nairobi</option>
+                                      <option value="Africa/Casablanca">(GMT+00:00) Casablanca</option>
+                                  </optgroup>
+                              
+                                  <!-- Australia -->
+                                  <optgroup label="Australia">
+                                      <option value="Australia/Sydney">(GMT+11:00) Sydney</option>
+                                      <option value="Australia/Melbourne">(GMT+11:00) Melbourne</option>
+                                      <option value="Australia/Perth">(GMT+08:00) Perth</option>
+                                      <option value="Australia/Adelaide">(GMT+10:30) Adelaide</option>
+                                      <option value="Australia/Brisbane">(GMT+10:00) Brisbane</option>
+                                  </optgroup>
+                              
+                                  <!-- Others -->
+                                  <optgroup label="Others">
+                                      <option value="Pacific/Auckland">(GMT+13:00) Auckland</option>
+                                      <option value="Pacific/Fiji">(GMT+12:00) Fiji</option>
+                                      <option value="Pacific/Honolulu">(GMT-10:00) Honolulu</option>
+                                      <option value="Pacific/Guam">(GMT+10:00) Guam</option>
+                                  </optgroup>
+                                </select>
+                                <div class="form-check form-switch form-check-reverse d-flex">
+                                    <div class="col-12 col-md-9 text-start mt-0">
+                                        <label class="form-check-label" for="flexSwitchCheckReverse"><strong>Balasan ke Komentar</strong></label>
+                                        <p>Memberikan notifikasi ketika seseorang membalas
+                                            komentar pengguna.</p>
+                                    </div>
+                                        <div class="col-md-3">
+                                            <input class="form-check-input mt-5" type="checkbox" id="flexSwitchCheckReverse">
+                                        </div>
                                 </div>
-                            </div>
+                            </div>                       
                         </div>
                     </div>
                 </div>

@@ -78,9 +78,9 @@
                         <div class="d-grid gap-2 w-75 mb-4">
                             <a href="setting-profil.html" class="btn btn-outline-danger">Profil</a>
                             <a href="setting-preferensi.html" class="btn btn-outline-danger">Preferensi</a>
-                            <a href="setting-notifikasi.html" class="btn btn-outline-danger">Notifikasi</a>
+                            <a href="setting-notifikasi.html" class="btn btn-danger active">Notifikasi</a>
                             <a href="setting-hubungkanAkun.html" class="btn btn-outline-danger">Hubungkan Akun</a>
-                            <a href="setting-keluar.html" class="btn btn-danger active">Keluar</a>
+                            <a href="setting-keluar.html" class="btn btn-outline-danger">Keluar</a>
                             <a href="setting-tutupAkun.html" class="btn btn-outline-danger">Tutup Akun</a>
                         </div>
                     </div>
@@ -88,13 +88,39 @@
                     <div class="col-12 col-md-9 p-3">
                         <div class="card-body">
                             <div class="text-center">
-                                <h3 class="mb-4"><strong>Keluar</strong></h3>
+                                <h3 class="mb-4"><strong>Notifikasi</strong></h3>
                             </div>
-                                <p><b>Peringatan! Keluar</b> berarti anda akan <b>keluar atau logout</b> dari 
-                                    website ini, anda akan diminta untuk <b>login</b> kembali jika anda memasuki 
-                                    website ini lagi. Apa anda ingin keluar?
-                                <div class="text-center">
-                                    <a type="submit" class="btn btn-outline-danger" href="HalamanSignIn.html" >Ya</a>
+                                <div class="form-check form-switch form-check-reverse d-flex">
+                                    <div class="col-12 col-md-9 text-start mt-0">
+                                        <label class="form-check-label" for="flexSwitchCheckReverse"><strong>Notifikasi Postingan Baru</strong></label>
+                                        <p>Menampilkan notifikasi ketika ada postingan
+                                            baru di forum atau diskusi yang diikuti.</p>
+                                    </div>
+                                        <div class="col-md-3">
+                                            <input class="form-check-input mt-5" type="checkbox" id="flexSwitchCheckReverse">
+                                        </div>
+                                </div>
+
+                                <div class="form-check form-switch form-check-reverse d-flex">
+                                    <div class="col-12 col-md-9 text-start mt-0">
+                                        <label class="form-check-label" for="flexSwitchCheckReverse"><strong>Komentar Baru</strong></label>
+                                        <p>Menampilkan notifikasi jika ada komentar baru
+                                            pada postingan yang diikuti atau diposting oleh pengguna.</p>
+                                    </div>
+                                        <div class="col-md-3">
+                                            <input class="form-check-input mt-5" type="checkbox" id="flexSwitchCheckReverse">
+                                        </div>
+                                </div>
+
+                                <div class="form-check form-switch form-check-reverse d-flex">
+                                    <div class="col-12 col-md-9 text-start mt-0">
+                                        <label class="form-check-label" for="flexSwitchCheckReverse"><strong>Balasan ke Komentar</strong></label>
+                                        <p>Memberikan notifikasi ketika seseorang membalas
+                                            komentar pengguna.</p>
+                                    </div>
+                                        <div class="col-md-3">
+                                            <input class="form-check-input mt-5" type="checkbox" id="flexSwitchCheckReverse">
+                                        </div>
                                 </div>
                             </div>
                         </div>
